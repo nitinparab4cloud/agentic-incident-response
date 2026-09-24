@@ -1,5 +1,7 @@
 # Agentic AI Incident Response
 
+[![Tests](https://github.com/nitinparab4cloud/agentic-incident-response/actions/workflows/tests.yml/badge.svg)](https://github.com/nitinparab4cloud/agentic-incident-response/actions/workflows/tests.yml)
+
 A synthetic multi-agent sandbox and a policy engine built to demonstrate the
 governance controls that would have caught the real July 2026 OpenAI /
 Hugging Face agentic security incident — reproducing the *shape* of its
@@ -12,12 +14,13 @@ happens when an agent with broader tool access starts behaving in ways
 nobody authorized — and what has to be true of the system around it for
 that to be caught and stopped rather than to run for four and a half days.
 
-**Live demo:** [`index.html`](index.html) in this folder — a complete,
-self-contained, already-tested static demo; upload it to a free Hugging
-Face **Static** Space in two clicks (see "Deploying to Hugging Face
-Spaces" below), or just open the file locally.
-**Part of:** [AI Governance Case Files](../README.md) — a growing
-portfolio series
+**Live demo:** https://huggingface.co/spaces/nparab/agentic-incident-response
+(the same self-contained `index.html` in this repo also runs locally).
+
+**Part of:** AI Governance Case Files, a six-project series: [EU AI Act Risk Navigator](https://github.com/nitinparab4cloud/ai-act-risk-navigator) · [Algorithmic Fairness Auditor](https://github.com/nitinparab4cloud/fairness-auditor) · [Governance Documentation Suite](https://github.com/nitinparab4cloud/governance-documentation-suite) · [Explainability Auditor](https://github.com/nitinparab4cloud/explainability-auditor) · [Governed RAG Agent](https://github.com/nitinparab4cloud/governed-rag-agent) · [Agentic AI Incident Response](https://github.com/nitinparab4cloud/agentic-incident-response)
+
+**Origin:** Began as an extension of NUS MSI5004 (AI Governance and Ethics) coursework and was built out independently, beyond the module syllabus.
+
 **Status:** built and tested end to end, including a JS port for the live
 browser demo and an 11-case adversarial red-team suite.
 
@@ -41,9 +44,7 @@ This project asks a narrower, more buildable question than "how do we
 prevent the next OpenAI-scale incident": given a small set of concrete,
 testable controls, can they be shown — not just argued — to change the
 outcome of this specific failure pattern? The sandbox and policy engine
-below are the answer, and the [Case 06 analysis doc](../../..) this project
-grew out of has the full sourced incident summary and control mapping (see
-its link from the top-level portfolio README).
+below are the answer, and the Case 06 analysis this project grew out of has the full sourced incident summary; the control mapping is summarised below.
 
 ## How it works
 
