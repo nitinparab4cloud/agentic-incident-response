@@ -1,6 +1,4 @@
-# Agentic AI Incident Response
-
-[![Tests](https://github.com/nitinparab4cloud/agentic-incident-response/actions/workflows/tests.yml/badge.svg)](https://github.com/nitinparab4cloud/agentic-incident-response/actions/workflows/tests.yml)
+# Safety-2 — Agentic AI Incident Response
 
 A synthetic multi-agent sandbox and a policy engine built to demonstrate the
 governance controls that would have caught the real July 2026 OpenAI /
@@ -8,19 +6,18 @@ Hugging Face agentic security incident — reproducing the *shape* of its
 failure modes (an over-privileged credential, unrestricted egress, a
 stuck-retrying agent, an undetected coordination channel, and detection
 without escalation) without reproducing any real vulnerability, exploit
-technique, or vulnerable software. Where Case 05 audits an agent that
+technique, or vulnerable software. Where Safety-1 audits an agent that
 answers questions and files one kind of request, this project is about what
 happens when an agent with broader tool access starts behaving in ways
 nobody authorized — and what has to be true of the system around it for
 that to be caught and stopped rather than to run for four and a half days.
 
-**Live demo:** https://huggingface.co/spaces/nparab/agentic-incident-response
-(the same self-contained `index.html` in this repo also runs locally).
-
-**Part of:** AI Governance Case Files, a six-project series: [EU AI Act Risk Navigator](https://github.com/nitinparab4cloud/ai-act-risk-navigator) · [Algorithmic Fairness Auditor](https://github.com/nitinparab4cloud/fairness-auditor) · [Governance Documentation Suite](https://github.com/nitinparab4cloud/governance-documentation-suite) · [Explainability Auditor](https://github.com/nitinparab4cloud/explainability-auditor) · [Governed RAG Agent](https://github.com/nitinparab4cloud/governed-rag-agent) · [Agentic AI Incident Response](https://github.com/nitinparab4cloud/agentic-incident-response)
-
-**Origin:** Began as an extension of NUS MSI5004 (AI Governance and Ethics) coursework and was built out independently, beyond the module syllabus.
-
+**Live demo:** [`index.html`](index.html) in this folder — a complete,
+self-contained, already-tested static demo; upload it to a free Hugging
+Face **Static** Space in two clicks (see "Deploying to Hugging Face
+Spaces" below), or just open the file locally.
+**Part of:** [AI Governance Case Files](../README.md) — a growing
+portfolio series
 **Status:** built and tested end to end, including a JS port for the live
 browser demo and an 11-case adversarial red-team suite.
 
@@ -44,7 +41,9 @@ This project asks a narrower, more buildable question than "how do we
 prevent the next OpenAI-scale incident": given a small set of concrete,
 testable controls, can they be shown — not just argued — to change the
 outcome of this specific failure pattern? The sandbox and policy engine
-below are the answer, and the Case 06 analysis this project grew out of has the full sourced incident summary; the control mapping is summarised below.
+below are the answer, and the [Safety-2 analysis doc](../../..) this project
+grew out of has the full sourced incident summary and control mapping (see
+its link from the top-level portfolio README).
 
 ## How it works
 
@@ -169,7 +168,7 @@ wants it spelled out before diving in.
   detectable. Honestly scoped: this is tamper-evident within one running
   process's memory, not a real immutable ledger.
 - **GPAI (General-Purpose AI)** — not used in this project, but comes up
-  when comparing it to Case 01: a model built for broad, general use (like
+  when comparing it to CrossSector-1: a model built for broad, general use (like
   a foundation model) rather than one narrow task. Relevant distinction:
   GPAI obligations attach to the model itself; the controls in *this*
   project attach to how deployed agents are allowed to *act*, which is a
@@ -182,7 +181,7 @@ wants it spelled out before diving in.
   2026)
 - Independent reporting and analysis published in the weeks following
   disclosure
-- This portfolio's own Case 06 analysis doc, which has the full sourced
+- This portfolio's own Safety-2 analysis doc, which has the full sourced
   incident summary and control-mapping table this project implements
   against (linked from the top-level portfolio README)
 

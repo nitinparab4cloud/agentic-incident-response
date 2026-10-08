@@ -1,5 +1,5 @@
 # Copyright © 2026 Nitin Parab. Part of the "AI Governance Case Files" portfolio
-# (https://github.com/nitinparab4cloud/agentic-incident-response).
+# (https://github.com/nitinparab4cloud/nus-masters-projects/tree/main/msi5004-ai-governance-portfolio/06-agentic-incident-response).
 # See this project's LICENSE file for reuse terms.
 
 """
@@ -15,7 +15,7 @@ can be demonstrated and tested honestly. See the project README's
 "What this is not" section.
 
 This models the shape of the July 2026 OpenAI / Hugging Face incident
-(see the portfolio's Case 06 analysis doc, linked from the README) without
+(see the portfolio's Safety-2 analysis doc, linked from the README) without
 reproducing any of its actual technical mechanism:
 
   - `run_task`        stands in for the ExploitGym-style benchmark task an

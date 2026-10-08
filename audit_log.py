@@ -1,11 +1,11 @@
 # Copyright © 2026 Nitin Parab. Part of the "AI Governance Case Files" portfolio
-# (https://github.com/nitinparab4cloud/agentic-incident-response).
+# (https://github.com/nitinparab4cloud/nus-masters-projects/tree/main/msi5004-ai-governance-portfolio/06-agentic-incident-response).
 # See this project's LICENSE file for reuse terms.
 
 """
 audit_log.py
 
-A SHA-256 hash-chained, append-only audit trail. Same pattern as Case 05
+A SHA-256 hash-chained, append-only audit trail. Same pattern as Safety-1
 (05-governed-rag-agent/audit_log.py): each entry's hash covers its own
 content plus the previous entry's hash, so altering or deleting a past
 entry breaks every hash after it.

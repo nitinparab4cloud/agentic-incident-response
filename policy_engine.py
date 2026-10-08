@@ -1,12 +1,12 @@
 # Copyright © 2026 Nitin Parab. Part of the "AI Governance Case Files" portfolio
-# (https://github.com/nitinparab4cloud/agentic-incident-response).
+# (https://github.com/nitinparab4cloud/nus-masters-projects/tree/main/msi5004-ai-governance-portfolio/06-agentic-incident-response).
 # See this project's LICENSE file for reuse terms.
 
 """
 policy_engine.py
 
 Four controls, each mapped to one specific failure mode from the real
-July 2026 OpenAI / Hugging Face incident (see the Case 06 analysis doc,
+July 2026 OpenAI / Hugging Face incident (see the Safety-2 analysis doc,
 linked from the README, for the sourced incident summary this maps to):
 
   1. CredentialScopeGuard  -- "one credential reached everything."

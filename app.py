@@ -1,11 +1,11 @@
 # Copyright © 2026 Nitin Parab. Part of the "AI Governance Case Files" portfolio
-# (https://github.com/nitinparab4cloud/agentic-incident-response).
+# (https://github.com/nitinparab4cloud/nus-masters-projects/tree/main/msi5004-ai-governance-portfolio/06-agentic-incident-response).
 # See this project's LICENSE file for reuse terms.
 
 """
 app.py
 ------
-Gradio front end for Case 06 -- Agentic AI Incident Response.
+Gradio front end for Safety-2 -- Agentic AI Incident Response.
 
 Four tabs, all sharing the same synthetic sandbox and pattern used by
 sandbox.py / policy_engine.py / redteam_suite.py:
@@ -92,7 +92,7 @@ def narrate(step: str, agent_id: str, tool_name: str, ok: bool, message: str, ag
     return f"'{agent_id}' called {tool_name}: {message}"
 
 # -- shared state --------------------------------------------------------------
-# A single engine + audit log for the life of the process, mirroring Case 05's
+# A single engine + audit log for the life of the process, mirroring Safety-1's
 # shared IntakeStore/AuditLog. "Replay the Incident" resets it; "Try a Single
 # Action" and "Audit Log" both act on whatever it currently holds, so a
 # replay's trail is visible there too.
@@ -267,14 +267,14 @@ def verify_chain():
 
 # -- layout -----------------------------------------------------------------------
 
-with gr.Blocks(title="Case 06 -- Agentic AI Incident Response") as demo:
+with gr.Blocks(title="Safety-2 -- Agentic AI Incident Response") as demo:
     gr.Markdown(
         "# Agentic AI Incident Response\n"
         "A synthetic sandbox and policy engine modeling the shape of the "
         "July 2026 OpenAI / Hugging Face agentic security incident -- no real "
         "vulnerability, exploit technique, or vulnerable software is reproduced "
         "here, only the *governance failure modes* and the controls that would "
-        "have caught them. See the README and the Case 06 analysis doc for the "
+        "have caught them. See the README and the Safety-2 analysis doc for the "
         "sourced incident summary and control mapping this demo implements."
     )
 

@@ -1,14 +1,14 @@
 # Copyright © 2026 Nitin Parab. Part of the "AI Governance Case Files" portfolio
-# (https://github.com/nitinparab4cloud/agentic-incident-response).
+# (https://github.com/nitinparab4cloud/nus-masters-projects/tree/main/msi5004-ai-governance-portfolio/06-agentic-incident-response).
 # See this project's LICENSE file for reuse terms.
 
 """
 redteam_suite.py
 
-The executable version of the Case 06 control-mapping table: adversarial
+The executable version of the Safety-2 control-mapping table: adversarial
 scenarios, one per real incident failure mode, each asserting the specific
 safe behavior expected of the guardrail -- not just "no crash." Same
-pattern as Case 05's redteam_suite.py: a `case()` registration decorator,
+pattern as Safety-1's redteam_suite.py: a `case()` registration decorator,
 pass/fail scoring per case, and a coverage check that every category is
 represented.
 
@@ -290,7 +290,7 @@ def print_report() -> bool:
         by_category.setdefault(c.category, []).append((c, r))
 
     all_passed = True
-    print(f"Case 06 red-team suite -- {len(results)} cases across {len(by_category)} categories\n")
+    print(f"Safety-2 red-team suite -- {len(results)} cases across {len(by_category)} categories\n")
     for category, items in by_category.items():
         print(f"[{category}]")
         for c, r in items:
